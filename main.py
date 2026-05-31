@@ -15,7 +15,6 @@ event_b = set()
 
 FILE_NAME = "student_records.txt"
 
-
 # ----------------------------
 # Q1: Student Registration and Grade Evaluation
 # ----------------------------
@@ -57,7 +56,6 @@ def student_registration():
     print("Marks:", marks)
     print("Grade:", grade)
     print("Remark:", remark)
-
 
 # ----------------------------
 # Q2: Course Enrollment Management
@@ -139,7 +137,6 @@ def record_management():
         else:
             print("Invalid choice.")
 
-
 # ----------------------------
 # Q4: Sorting and Searching of Student IDs
 # ----------------------------
@@ -199,7 +196,6 @@ def search_and_sort():
     else:
         print("Binary Search: Not found")
 
-
 # ----------------------------
 # Q5: Fee Calculation using Functions
 # ----------------------------
@@ -218,7 +214,6 @@ def fee_calculation():
 
     total = calculate_fee(tuition, hostel_fee, transport_fee)
     print("Total Payable Fee:", total)
-
 
 # ----------------------------
 # Q6: File Handling for Student Academic Records
@@ -262,7 +257,6 @@ def file_handling():
         else:
             print("Invalid choice.")
 
-
 # ----------------------------
 # Q7: Directory Scanning with Exception Handling
 # ----------------------------
@@ -293,7 +287,6 @@ def directory_scanning():
         print("Permission denied.")
     except Exception as e:
         print("Error:", e)
-
 
 # ----------------------------
 # Q8: Student Performance Analysis using NumPy, Pandas, Matplotlib
@@ -342,7 +335,6 @@ def performance_analysis():
 
     except Exception as e:
         print("Error in performance analysis:", e)
-
 
 # ----------------------------
 # Main Dashboard
