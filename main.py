@@ -68,8 +68,8 @@ def course_enrollment():
         if count >= max_courses:
             print("Maximum course limit reached.")
             break
-        course_name = input("Enter course name (or type 'stop' to end): ")
-        if course_name.lower() == "stop":
+        course_name = input("Enter course name (or type 'done' to end): ")
+        if course_name.lower() == "done":
             break
         try:
             credits = int(input("Enter credit value: "))
@@ -277,7 +277,9 @@ def performance_analysis():
 # Main Dashboard
 # ----------------------------
 def main_menu():
+
     while True:
+
         print("\n===================================")
         print("SMART CAMPUS INFORMATION SYSTEM")
         print("===================================")
@@ -291,30 +293,42 @@ def main_menu():
         print("8. Student Performance Analysis")
         print("9. Exit")
         print("===================================")
-    try:
-        choice = int(input("Enter your choice: "))
-    except ValueError:
-        print("Please enter a valid number.")
-        continue
-    if choice == 1:
-        student_registration()
-    elif choice == 2:
-        course_enrollment()
-     elif choice == 3:
-        record_management()
-    elif choice == 4:
-        search_and_sort()
-    elif choice == 5:
-        fee_calculation()
-    elif choice == 6:
-        file_handling()
-    elif choice == 7:
-        directory_scanning()
-    elif choice == 8:
-        performance_analysis()
-    elif choice == 9:
-        print("Exiting program. Thank you!")
-        break
-    else:
-        print("Invalid choice. Try again.")
+
+        try:
+            choice = int(input("Enter your choice: "))
+
+        except ValueError:
+            print("Please enter a valid number.")
+            continue
+
+        if choice == 1:
+            student_registration()
+
+        elif choice == 2:
+            course_enrollment()
+
+        elif choice == 3:
+            record_management()
+
+        elif choice == 4:
+            search_and_sort()
+
+        elif choice == 5:
+            fee_calculation()
+
+        elif choice == 6:
+            file_handling()
+
+        elif choice == 7:
+            directory_scanning()
+
+        elif choice == 8:
+            performance_analysis()
+
+        elif choice == 9:
+            print("Exiting program. Thank you!")
+            break
+
+        else:
+            print("Invalid choice. Try again.")
 main_menu()
